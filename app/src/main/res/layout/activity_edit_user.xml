@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="csdmovie.assignment.controller.EditUserActivity">
+
+    <TextView
+        android:text="Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/major"
+        android:textSize="20dp"
+        android:layout_below="@+id/username"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:text="Banned: No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/isBanned"
+        android:textSize="20dp"
+        android:layout_below="@+id/banButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView3"
+        android:layout_below="@+id/isBanned"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ban"
+        android:id="@+id/banButton"
+        android:layout_marginLeft="73dp"
+        android:layout_marginStart="73dp"
+        android:layout_alignTop="@+id/major"
+        android:layout_toRightOf="@+id/isBanned"
+        android:layout_toEndOf="@+id/isBanned"
+        android:onClick="banUser"/>
+
+
+</RelativeLayout>
